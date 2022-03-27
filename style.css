@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Mulish:ital,wght@0,300;0,700;1,400&family=Playfair+Display:wght@700&family=Roboto&display=swap');
+body {
+    background: linear-gradient(300deg,#000000, #732800);
+    background-size: 120% 1000%;
+    background-repeat: no-repeat;
+    animation: gradient-animation 12s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header h1 {
+    color: #ff6a00;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 40px
+}
+#textParagraph, #resultParagraph {
+    font-size: 20px;
+    color: #732800;
+    font-family: Georgia;
+}
+#symbolParagraph {
+    margin-top: 3%;
+    color: red;
+    font-family: "Century Gothic";
+}
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+}
+#destroyBtn, #backBtn {
+    display: block;
+    margin-top: 5%;
+    padding: 1.5% 6%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    font-weight: 400;
+    background-color: #484848;
+    border: 1px solid #484848;
+    transition: all 800ms;
+    cursor: pointer;
+}
+#sumBtn {
+    display: none;
+    margin-top: 2%;
+    padding: 16px 20px;
+    background-color: #484848;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 600ms;
+}
+#sumBtn:hover {
+    box-shadow: 0px 0px 1px 1px #ff6a00;
+    color: #ff4d00;
+}
+#backBtn {
+    display: none;
+}
+#destroyBtn:hover {
+    border: 1px solid #ff6a00;
+    color: #ff4d00;
+}
+#resultParagraph {
+    display: none;
+}
+#resultWrapper {
+    display: flex;
+    justify-content: center;
+}
+#result {
+    padding: 1% 3%;
+    background-color: bisque;
+    color: gray;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    border: 2px solid black;
+    display: none;
+}

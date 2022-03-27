@@ -1,0 +1,11 @@
+@media (max-width: 820px) {
+    body {
+        margin-top: 50%;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    #destroyBtn, #backBtn {
+        padding: 3% 9%;
+    }
+}
