@@ -1,18 +1,18 @@
 'use strict';
 
-let resultTag = document.getElementById('result');
-let resultParagraph = document.getElementById('resultParagraph');
-let destroyBtn = document.getElementById('destroyBtn');
-let textInput = document.getElementById('textInput');
-let symbolInput = document.getElementById('symbolInput');
-let textParagraph = document.getElementById('textParagraph');
-let symbolParagraph = document.getElementById('symbolParagraph');
-let backBtn = document.getElementById('backBtn');
+const resultTag = document.getElementById('result');
+const resultParagraph = document.getElementById('resultParagraph');
+const destroyBtn = document.getElementById('destroyBtn');
+const textInput = document.getElementById('textInput');
+const symbolInput = document.getElementById('symbolInput');
+const textParagraph = document.getElementById('textParagraph');
+const symbolParagraph = document.getElementById('symbolParagraph');
+const backBtn = document.getElementById('backBtn');
 const sumBtn = document.getElementById('sumBtn');
 
 function destroy () { // 2
-    const textVal = document.getElementById('textInput').value;
-    const symbolVal = document.getElementById('symbolInput').value;
+    const textVal = textInput.value;
+    const symbolVal = symbolInput.value;
     let result = '';
     for (let i of textVal) {
         if (i != symbolVal) {
@@ -26,16 +26,18 @@ function destroy () { // 2
 }
 
 function displayResult () { // 1
-    resultTag.style.display = 'block';
-    resultTag.innerHTML = destroy();
-    resultParagraph.style.display = 'block';
-    destroyBtn.style.display = 'none';
-    textInput.style.display = 'none';
-    symbolInput.style.display = 'none';
-    textParagraph.style.display = 'none';
-    symbolParagraph.style.display = 'none';
-    backBtn.style.display = 'block';
-    displaySumBtn()
+    if (textInput.value != '') {
+        resultTag.style.display = 'block';
+        resultTag.innerHTML = destroy();
+        resultParagraph.style.display = 'block';
+        destroyBtn.style.display = 'none';
+        textInput.style.display = 'none';
+        symbolInput.style.display = 'none';
+        textParagraph.style.display = 'none';
+        symbolParagraph.style.display = 'none';
+        backBtn.style.display = 'block';
+        displaySumBtn();
+    }
 }
 
 function back () {
