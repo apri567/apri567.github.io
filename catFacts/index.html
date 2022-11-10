@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Facts</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            font-family: "Roboto Light";
+        }
+        #window {
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 50%;
+            border-radius: 5%;
+            padding: 5%;
+            /*margin-top: 15%;*/
+            position: absolute;
+            top: 25%;
+        }
+        #button {
+            border: none;
+            padding: 10px;
+            border-radius: 10%;
+            margin-top: 2%;
+            font-size: 18px;
+            font-family: "Roboto Light";
+            cursor: pointer;
+
+        }
+        @media (max-width: 720px) {
+            #window {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="window">
+        <div id="fact"></div>
+        <button id="button">Новый факт</button>
+    </div>
+
+    <script>
+        document.getElementById('button').addEventListener('click', getFact);
+        document.getElementById('button').addEventListener('click', changeBackground);
+
+
+        function getFact () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://meowfacts.herokuapp.com/?lang=rus', true);
+
+            xhr.onload = function () {
+                if (this.status = 200) {
+                    var facts = JSON.parse(this.responseText);
+                    document.getElementById('fact').innerHTML = '<h1>'+facts.data+'</h1>';
+                }
+            }
+            xhr.send();
+        }
+        function changeBackground () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://api.thecatapi.com/v1/images/search', true);
+
+            xhr.onload = function () {
+                if (this.status = 200) {
+                    var background = JSON.parse(this.responseText)[0];
+                    document.querySelector('body').style.backgroundImage = `url('${background.url}')`;
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
