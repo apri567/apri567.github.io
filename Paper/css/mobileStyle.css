@@ -1,0 +1,19 @@
+@media (max-width: 920px) {
+    /* Header */
+    .headerHeading {
+        font-size: 35px;
+    }
+    /* Swiper */
+    .swiper-slide {
+        font-size: 12px;
+    }
+    /*  Effort Less Expression   */
+    .effortLessExpression {
+        height: 50vh;
+        background-size: cover;
+    }
+    /*  Ideas Section  */
+    .ideasPadding {
+        width: 100%!important;
+    }
+}

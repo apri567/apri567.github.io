@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paper</title>
+    <!--  Подключаем шрифты  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--  Подключаем Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  Подключаем Swiper.js  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+</head>
+<body>
+    <!--  Навигационное меню для пк версии  -->
+    <nav class="navbar navbar-expand-sm bg-light px-4 d-none d-md-flex justify-content-between">
+        <div class="nav-link navLeft p-0 d-flex align-items-center">
+            <a class="navbar-brand" href="#"><img src="img/logo2.svg" alt="logo2"></a>
+            <a class="text-dark text-decoration-none ps-3" href="#">About us</a>
+        </div>
+        <div class="nav-link navCenter p-0">
+            <a class="nav-link ms-5" href="#"><img src="img/logo1.svg" alt="logo1"></a>
+        </div>
+        <div class="nav-link navRight p-0">
+            <a class="text-dark text-decoration-none pe-3" href="#">Help</a>
+            <a class="text-dark text-decoration-none pe-4" href="#">Explore</a>
+            <a class="text-dark" href="#">
+                <button type="button" class="btn btn-dark rounded-pill px-4">Download</button>
+            </a>
+        </div>
+    </nav>
+
+    <!--  Навигационное меню для мобильной версии  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex d-md-none">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-1" href="#"><img src="img/logo2.svg" alt="logo2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active ps-1" aria-current="page" href="#">About us</a>
+                    <a class="nav-link ps-1" href="#">Help</a>
+                    <a class="nav-link ps-1" href="#">Explore</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Хэдер  -->
+    <header class="pb-5">
+        <div class="justify-content-between align-items-center mt-5 d-block d-lg-flex">
+            <div class="ps-5 ms-md-4">
+                <h1 class="headerHeading w-50">Creativity at your fingertips</h1>
+                <p class="headerPadding">Whether you’re coloring inside the lines or thinking outside the box, it’s never been easier to get ideas on Paper</p>
+                <button type="button" class="btn btn-dark rounded-pill px-4 btn-lg">Download</button>
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4 btn-lg ms-2">Explore</button>
+            </div>
+            <div class="pt-4">
+                <img src="img/sketch1.svg" alt="sketch" width="846" height="799" class="img-fluid">
+            </div>
+        </div>
+    </header>
+
+    <!--  Раздел Bring Life  -->
+    <section class="bringLifeSection align-items-center">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-12 col-lg-4">
+                    <h1 class="bringLifeHeading text-white fw-normal w-75">Bring life to your ideas</h1>
+                    <p class="bringLifeParagraph text-white">We’ve polished every tap, swipe, and pinch to mirror your natural gestures. Watch life-like journals jump from the page, while 3D interactions create our most immersive experience yet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Раздел Effort Less Expression  -->
+    <section class="effortLessExpression">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mt-5 pt-5">
+                    <h1 class="mt-0 mt-lg-5">Effort less expression</h1>
+                    <p>Bring your ideas to life in all their messy glory. Paper’s perfectly-tuned tools make it easy to sketch, write, paint, draw—wherever your thoughts take you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Раздел A Helping Hand  -->
+    <section class="aHelpingHand py-5 bg-dark">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="pt-5 text-white">A helping hand</h1>
+                    <p class="pt-3 text-white">Struggling to get started? The Paper Store is packed with tips and tricks from our favorite<br>creators to help you conquer your fear of the big, blank page.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-block">
+                    <p class="text-white">Little Red Riding Hood<br>Joey Gao</p>
+                    <img src="img/book1.svg" alt="book">
+                    <p class="text-white-50">Revisit a familiar folk tale.</p>
+                </div>
+                <div class="swiper-slide d-block">
+                    <p class="text-white">Draw More With Less<br>Allen Lau & Iulia Soare</p>
+                    <img src="img/book2.svg" alt="book">
+                    <p class="text-white-50">Challenge yourself to draw more with less.</p>
+                </div>
+                <div class="swiper-slide d-block">
+                    <p class="text-white">Learn to Draw Portraits<br>Andrew Allen</p>
+                    <img src="img/book3.svg" alt="book">
+                    <p class="text-white-50">Trace and fill portraits from photos.</p>
+                </div>
+                <div class="swiper-slide d-block">
+                    <p class="text-white">Making Comics 101 <br>Lucy Bellwood</p>
+                    <img src="img/book4.svg" alt="book">
+                    <p class="text-white-50">Combine storytelling and design to build your own comics.</p>
+                </div>
+                <div class="swiper-slide d-block">
+                    <p class="text-white">30 Day Challenge No. 3<br>Allen Lau & Joey Gao</p>
+                    <img src="img/book5.svg" alt="book">
+                    <p class="text-white-50">Challenge yourself to create every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Раздел Functions  -->
+    <section class="functions">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <img src="img/sketch2.svg" alt="sketch" width="846" height="799" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <h1 class="text-center text-md-start">The quickest<br>way to collage</h1>
+                    <p class="text-center text-md-start">Add multiple photos to a single page and cut, stick, move, and fix without the fuss of complex layers. From moodboards to storyboards, pull inspiration from anywhere and get ideas flowing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Раздел Ideas  -->
+    <section class="ideas">
+        <div class="d-block d-md-flex justify-content-between align-items-center d-block d-lg-flex">
+            <div class="ps-3 ps-md-5 ms-md-5">
+                <h1>Your ideas, your way</h1>
+                <p class="ideasPadding w-50">Organize pages into beautiful journals and sync them across your devices. So wherever and whenever inspiration strikes, you’re ready to pick ideas up right where you left them.</p>
+            </div>
+            <div class="pt-4">
+                <img src="img/sketch3.svg" alt="sketch" width="1046" height="929" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!--  Раздел App  -->
+    <section class="app py-5 mt-3 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="img/app.svg" alt="app" class="img-fluid d-block m-auto">
+                    <p class="text-center">Available for iPhone and iPad</p>
+                    <button type="button" class="btn btn-dark rounded-pill px-4 btn-lg d-block m-auto">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Футер  -->
+    <footer class="bg-dark pt-5">
+        <!--  Часть первая  -->
+        <section class="footerPartOne">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-2 d-none d-md-block">
+                        <img src="img/weTransfer.svg" alt="weTransfer">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <h1 class="fs-5 mb-3">Products</h1>
+                        <p><a href="">Get WeTransfer Pro</a></p>
+                        <p><a href="">WeTransfer</a></p>
+                        <p><a href="">Paste®</a></p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <h1 class="fs-5 mb-3">About us</h1>
+                        <p><a href="">Company</a></p>
+                        <p><a href="">Advertising</a></p>
+                        <p><a href="">B-Corp</a></p>
+                        <p><a href="">Jobs</a></p>
+                        <p><a href="">Newsroom</a></p>
+                        <p><a href="">Blog</a></p>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <h1 class="fs-5 mb-3">Support</h1>
+                        <p><a href="">Help</a></p>
+                        <p><a href="">Terms</a></p>
+                        <p><a href="">Privacy</a></p>
+                    </div>
+                    <div class="col-2 d-none d-md-block">
+                        <img src="img/wePresent.svg" alt="wePresent" class="mb-3">
+                        <p class="text-white-50">Discover the best art, photography, music and more</p>
+                        <p class="text-white">Get inspired</p>
+                        <img src="img/ideasReport.svg" alt="ideasReport" class="my-3">
+                        <p class="text-white-50">Dive into our annual report on creativity</p>
+                        <p class="text-white">Get the lowdown</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Часть вторая  -->
+        <section class="footerPartTwo px-3 px-md-5 py-4">
+            <!-- Пример отдельной кнопки danger -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/earthIcon.svg" alt="earth" class="me-3">
+                    English
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Russian</a></li>
+                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                    <li><a class="dropdown-item" href="#">Polish</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Other languages</a></li>
+                </ul>
+            </div>
+            <p class="copyright d-inline mx-3">© 2021 WeTransfer</p>
+        </section>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
